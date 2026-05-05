@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matilde 360 | Agencia Estratégica</title>
+    <!-- Tipografías Vanguardistas (Brainit Style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-text">MATILDE 360</div>
+    </div>
+
+    <!-- 3D Canvas Background -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <nav class="nav-main">
+        <div class="logo-text">MATILDE<span class="dot">.</span></div>
+        <div class="nav-links">
+            <a href="#paquetes" class="hover-target">Paquetes</a>
+            <a href="#servicios" class="hover-target">Servicios</a>
+            <a href="#equipo" class="hover-target">El Equipo</a>
+        </div>
+    </nav>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Hero Section con 3D -->
+            <section class="hero-main">
+                <div class="hero-container">
+                    <h1 class="massive-title">
+                        <div class="line-wrap"><div class="line-inner">DOMINAMOS</div></div>
+                        <div class="line-wrap"><div class="line-inner outline">LO DIGITAL.</div></div>
+                    </h1>
+                    <p class="hero-subtext gs-reveal">Construimos ecosistemas escalables, identidades inquebrantables y estrategias que aniquilan a la competencia.</p>
+                </div>
+            </section>
+
+            <!-- Marquee Separator -->
+            <div class="marquee-wrapper">
+                <div class="marquee-inner">
+                    <span>INNOVACIÓN</span> ✦ <span>DISEÑO</span> ✦ <span>ESTRATEGIA</span> ✦ <span>CRECIMIENTO</span> ✦ <span>INNOVACIÓN</span> ✦ <span>DISEÑO</span> ✦ <span>ESTRATEGIA</span> ✦ <span>CRECIMIENTO</span> ✦
+                </div>
+            </div>
+
+            <!-- Packages Section -->
+            <section id="paquetes" class="section-dark">
+                <div class="container">
+                    <h2 class="section-title split-text">NUESTROS<br>PAQUETES.</h2>
+                    
+                    <div class="packages-grid">
+                        <!-- BASIC -->
+                        <div class="package-card gs-reveal-up hover-target" data-cursor-text="VER MÁS">
+                            <h3 class="pkg-name">BASIC</h3>
+                            <p class="pkg-desc">Presencia + Leads</p>
+                            <div class="pkg-price">$6,900<span>/mes</span></div>
+                            <ul class="pkg-features">
+                                <li>Landing page & Catálogo</li>
+                                <li>CRM básico integrado</li>
+                                <li>Automatización de leads</li>
+                                <li>8 publicaciones/mes</li>
+                            </ul>
+                            <div class="pkg-imp">Implementación: $39,000</div>
+                        </div>
+
+                        <!-- PRO -->
+                        <div class="package-card popular gs-reveal-up hover-target delay-1" data-cursor-text="FAVORITO">
+                            <h3 class="pkg-name accent">PRO</h3>
+                            <p class="pkg-desc">Growth + Cotizador</p>
+                            <div class="pkg-price">$12,900<span>/mes</span></div>
+                            <ul class="pkg-features">
+                                <li>Todo lo de Basic</li>
+                                <li>Cotizador interactivo web</li>
+                                <li>16 + 4 premium publicaciones</li>
+                                <li>Reportes mensuales Growth</li>
+                            </ul>
+                            <div class="pkg-imp">Implementación: $79,000</div>
+                        </div>
+
+                        <!-- ELITE -->
+                        <div class="package-card gs-reveal-up hover-target delay-2" data-cursor-text="ÉLITE">
+                            <h3 class="pkg-name">ELITE</h3>
+                            <p class="pkg-desc">Ecosistema 360</p>
+                            <div class="pkg-price">$24,900<span>/mes</span></div>
+                            <ul class="pkg-features">
+                                <li>Todo lo de Pro</li>
+                                <li>Facturador CFDI 4.0</li>
+                                <li>Gestión de roles y auditoría</li>
+                                <li>Dashboard BI Pro</li>
+                            </ul>
+                            <div class="pkg-imp">Implementación: $169,000</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Equipo Section -->
+            <section id="equipo" class="section-dark border-top">
+                <div class="container">
+                    <h2 class="section-title split-text">CONOCE AL<br><span class="accent-color">EQUIPO.</span></h2>
+                    
+                    <div class="team-list">
+                        <!-- Redirecciones a los perfiles creados -->
+                        <a href="Maf.html" class="team-item hover-target" data-cursor-text="VER PERFIL">
+                            <span class="team-name">MAF</span>
+                            <span class="team-role">EXPERTA INDUSTRIA FARMA</span>
+                        </a>
+                        <a href="Jose_Luis.html" class="team-item hover-target" data-cursor-text="VER PERFIL">
+                            <span class="team-name">JOSE LUIS</span>
+                            <span class="team-role">EXPERTO EN BRANDING</span>
+                        </a>
+                        <a href="Alex.html" class="team-item hover-target" data-cursor-text="VER PERFIL">
+                            <span class="team-name">ALEX</span>
+                            <span class="team-role">DESARROLLO TECNOLÓGICO</span>
+                        </a>
+                        <a href="Mariel.html" class="team-item hover-target" data-cursor-text="VER PERFIL">
+                            <span class="team-name">MARIEL</span>
+                            <span class="team-role">ESTRATEGA DIGITAL</span>
+                        </a>
+                        <a href="Monse.html" class="team-item hover-target" data-cursor-text="VER PERFIL">
+                            <span class="team-name">MONSE</span>
+                            <span class="team-role">DESARROLLADORA WEB</span>
+                        </a>
+                        <a href="Sckar.html" class="team-item hover-target" data-cursor-text="VER PERFIL">
+                            <span class="team-name">SCKAR</span>
+                            <span class="team-role">PAUTA DIGITAL</span>
+                        </a>
+                        <a href="Tono.html" class="team-item hover-target" data-cursor-text="VER PERFIL">
+                            <span class="team-name">TOÑO</span>
+                            <span class="team-role">ESTRATEGA COMERCIAL</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer-main">
+                <div class="container">
+                    <h2 class="massive-title outline">MATILDE 360</h2>
+                    <p>© 2026. THE FUTURE DIGITAL AGENCY.</p>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Librerías GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Three.js para el objeto 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

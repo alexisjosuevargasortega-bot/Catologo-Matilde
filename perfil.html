@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | Matilde 360</title>
+    <!-- Tipografías Vanguardistas (Brainit Style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Preloader (Opcional, estilo agencia) -->
+    <div class="preloader">
+        <div class="preloader-text">MATILDE 360</div>
+    </div>
+
+    <nav class="nav-profile">
+        <a href="index.html" class="back-link hover-target">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Volver
+        </a>
+        <div class="logo-text">MATILDE<span class="dot">.</span></div>
+    </nav>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Hero Section -->
+            <section class="hero-profile">
+                <!-- Texto Gigante Marquee Arriba -->
+                <div class="marquee-container top">
+                    <div class="marquee-inner">
+                        <span class="profile-name">NOMBRE</span> <span class="profile-name outline">NOMBRE</span>
+                        <span class="profile-name">NOMBRE</span> <span class="profile-name outline">NOMBRE</span>
+                    </div>
+                </div>
+
+                <!-- Contenedor Imagen Revelada -->
+                <div class="hero-image-container hover-target" data-cursor-text="EXPLORAR">
+                    <div class="image-reveal-wrapper">
+                        <img src="" alt="Profile Image" id="profile-image" class="parallax-img">
+                    </div>
+                </div>
+
+                <!-- Texto Gigante Marquee Abajo (Inverso) -->
+                <div class="marquee-container bottom">
+                    <div class="marquee-inner reverse">
+                        <span class="profile-name outline">NOMBRE</span> <span class="profile-name">NOMBRE</span>
+                        <span class="profile-name outline">NOMBRE</span> <span class="profile-name">NOMBRE</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección About / Descripción (Brainit style, Huge Typography) -->
+            <section class="about-section">
+                <div class="container">
+                    <h2 class="split-text title-massive">REDEFINIENDO<br><span class="accent-color">LO POSIBLE.</span></h2>
+                    
+                    <div class="about-grid">
+                        <div class="about-info gs-reveal-up">
+                            <h3 class="role-title">ROL EN EL EQUIPO</h3>
+                            <p class="role-desc" id="profile-role">Especialista Digital Estratégico</p>
+                        </div>
+                        <div class="about-text gs-reveal-up delay-1">
+                            <p>Especialista en llevar ideas abstractas a resultados tangibles y escalables. Diseño, estrategia y ejecución impecable para asegurar que la marca no solo compita, sino que <strong>domine</strong> su sector.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills / Tags Marquee -->
+            <section class="skills-section">
+                <div class="skills-marquee">
+                    <div class="skills-inner">
+                        <span>INNOVACIÓN</span> ✦ <span>ESTRATEGIA DIGITAL</span> ✦ <span>DISEÑO UX/UI</span> ✦ <span>CRECIMIENTO</span> ✦ <span>INNOVACIÓN</span> ✦ <span>ESTRATEGIA DIGITAL</span> ✦ <span>DISEÑO UX/UI</span> ✦ <span>CRECIMIENTO</span> ✦
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Librerías GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- SplitText (sustituto vanilla para animar letras) -->
+    <script src="perfil.js"></script>
+</body>
+</html>
